@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>د. نادية لطفي محمد العسال | باحثة تربوية</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Tajawal:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Noto+Serif+Arabic:wght@200;300;400;500&display=swap" rel="stylesheet">
 <style>
 :root {
   --gold:#C9A84C; --gold-l:#E8C97A; --gold-d:#7a5e28;
@@ -26,7 +26,7 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;scrollbar-width:thin;scrollbar-color:var(--gold) var(--bg);}
 ::selection{background:rgba(201,168,76,.18);color:var(--txt);}
-body{font-family:'Tajawal',sans-serif;background:var(--bg);color:var(--txt);overflow-x:hidden;transition:background .5s,color .5s;}
+body{font-family:'Noto Naskh Arabic',sans-serif;background:var(--bg);color:var(--txt);overflow-x:hidden;transition:background .5s,color .5s;}
 
 body::before{content:'';position:fixed;inset:0;z-index:998;pointer-events:none;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='f'%3E%3CfeTurbulence baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23f)' opacity='.022'/%3E%3C/svg%3E");
@@ -64,7 +64,7 @@ nav::after{
   opacity:.4;
 }
 .nlogo{
-  font-family:'Cormorant Garamond',serif;
+  font-family:'Playfair Display','Noto Serif Arabic',serif;
   font-size:1.15rem;color:var(--gold);
   font-style:italic;letter-spacing:.07em;
   display:flex;align-items:center;gap:.7rem;
@@ -119,7 +119,7 @@ nav::after{
   background-size:80px 80px;opacity:.45;pointer-events:none;
 }
 
-.hcont{position:relative;z-index:2;animation:riseIn 1.1s ease forwards;}
+.hcont{position:relative;z-index:2;animation:riseIn 1.3s cubic-bezier(.16,1,.3,1) forwards;}
 
 .eyebrow{
   display:flex;align-items:center;gap:1rem;
@@ -139,7 +139,7 @@ nav::after{
 }
 
 .htitle{
-  font-family:'Cormorant Garamond',serif;
+  font-family:'Playfair Display','Noto Serif Arabic',serif;
   font-size:clamp(3rem,5.5vw,5.5rem);
   font-weight:300;line-height:1.05;
   margin-bottom:.4rem;
@@ -168,25 +168,27 @@ nav::after{
 .btn-primary{
   display:inline-flex;align-items:center;gap:.7rem;
   background:var(--gold);color:#0a0806;
-  padding:.85rem 2.2rem;font-family:'Tajawal',sans-serif;
-  font-size:.8rem;font-weight:500;letter-spacing:.14em;text-decoration:none;
-  transition:all .35s;text-transform:uppercase;
+  padding:.85rem 2.2rem;font-family:'Noto Naskh Arabic',sans-serif;
+  font-size:.8rem;font-weight:600;letter-spacing:.14em;text-decoration:none;
+  transition:all .4s cubic-bezier(.16,1,.3,1);text-transform:uppercase;
+  position:relative;overflow:hidden;
 }
-.btn-primary:hover{background:var(--gold-l);transform:translateY(-1px);box-shadow:0 8px 25px rgba(201,168,76,.3);}
+.btn-primary:hover{background:var(--gold-l);transform:translateY(-3px);box-shadow:0 15px 40px rgba(201,168,76,.45);}
+.btn-primary:active{transform:translateY(-1px);}
 .btn-ghost{
   display:inline-flex;align-items:center;gap:.6rem;
   border:1px solid var(--bdr2);color:var(--gold);
-  padding:.82rem 2rem;font-family:'Tajawal',sans-serif;
+  padding:.82rem 2rem;font-family:'Noto Naskh Arabic',sans-serif;
   font-size:.8rem;font-weight:300;letter-spacing:.12em;text-decoration:none;
-  transition:all .3s;text-transform:uppercase;background:transparent;
+  transition:all .4s cubic-bezier(.16,1,.3,1);text-transform:uppercase;background:transparent;
 }
 .btn-ghost svg{width:13px;height:13px;fill:currentColor;}
-.btn-ghost:hover{background:var(--glow);border-color:var(--gold-l);}
+.btn-ghost:hover{background:var(--glow);border-color:var(--gold-l);transform:translateY(-2px);}
 
 .hvis{
   position:relative;z-index:2;
   display:flex;justify-content:center;
-  animation:fadeIn 1.6s ease forwards;
+  animation:fadeIn 1.8s cubic-bezier(.16,1,.3,1) forwards;
 }
 .hero-img-wrap{
   position:relative;
@@ -235,10 +237,10 @@ nav::after{
   border-right:3px solid var(--gold);
   min-width:170px;
   transition:background .5s;
-  animation:floatY 4s ease-in-out infinite;
+  animation:floatY 5s cubic-bezier(.45,.05,.55,.95) infinite;
 }
 .photo-badge .pb-num{
-  font-family:'Cormorant Garamond',serif;
+  font-family:'Playfair Display','Noto Serif Arabic',serif;
   font-size:2.1rem;color:var(--gold);line-height:1;
   text-shadow:0 0 20px rgba(201,168,76,.3);
 }
@@ -257,8 +259,8 @@ nav::after{
 .stat-block{
   padding:2rem 1.5rem;text-align:center;
   position:relative;
-  opacity:0;animation:riseIn .7s ease forwards;
-  animation-delay:calc(var(--i)*.1s);
+  opacity:0;animation:countUp .8s cubic-bezier(.16,1,.3,1) forwards;
+  animation-delay:calc(var(--i)*.15s);
 }
 .stat-block::after{
   content:'';position:absolute;top:20%;left:0;height:60%;width:1px;
@@ -267,7 +269,7 @@ nav::after{
 .stat-block:first-child::after{display:none;}
 .stat-block:hover .stat-num{color:var(--gold-l);text-shadow:0 0 30px rgba(201,168,76,.45);}
 .stat-num{
-  font-family:'Cormorant Garamond',serif;
+  font-family:'Playfair Display','Noto Serif Arabic',serif;
   font-size:1.7rem;font-weight:300;color:var(--gold);
   line-height:1.1;
   text-shadow:0 0 18px rgba(201,168,76,.2);
@@ -285,7 +287,7 @@ section{padding:8rem 5%;}
 }
 .sec-tag::before{content:'';width:30px;height:1px;background:var(--gold);}
 h2.sec-title{
-  font-family:'Cormorant Garamond',serif;
+  font-family:'Playfair Display','Noto Serif Arabic',serif;
   font-size:clamp(2rem,3.8vw,3.4rem);font-weight:300;line-height:1.1;
 }
 h2.sec-title em{font-style:italic;color:var(--gold);}
@@ -328,7 +330,7 @@ h2.sec-title em{font-style:italic;color:var(--gold);}
   background:linear-gradient(to top,rgba(249,246,240,.92) 0%,transparent 100%);
 }
 .about-photo-caption .cap-label{font-size:.62rem;color:var(--gold);letter-spacing:.3em;text-transform:uppercase;margin-bottom:.35rem;}
-.about-photo-caption .cap-text{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--txt);font-style:italic;opacity:.8;}
+.about-photo-caption .cap-text{font-family:'Playfair Display','Noto Serif Arabic',serif;font-size:1rem;color:var(--txt);font-style:italic;opacity:.8;}
 
 .about-content{}
 .quote-pull{
@@ -342,12 +344,12 @@ h2.sec-title em{font-style:italic;color:var(--gold);}
 .quote-pull::before{
   content:'"';
   position:absolute;top:-.8rem;left:1.2rem;
-  font-family:'Cormorant Garamond',serif;
+  font-family:'Playfair Display','Noto Serif Arabic',serif;
   font-size:7rem;color:var(--gold);opacity:.055;
   line-height:1;pointer-events:none;
 }
 .quote-pull p{
-  font-family:'Cormorant Garamond',serif;
+  font-family:'Playfair Display','Noto Serif Arabic',serif;
   font-size:1.32rem;font-style:italic;
   line-height:1.72;color:var(--txt);font-weight:300;
 }
@@ -406,7 +408,7 @@ h2.sec-title em{font-style:italic;color:var(--gold);}
 }
 .thesis-tag{font-size:.62rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;}
 .thesis-title{
-  font-family:'Cormorant Garamond',serif;
+  font-family:'Playfair Display','Noto Serif Arabic',serif;
   font-size:1.32rem;line-height:1.7;color:var(--txt);
   font-weight:300;margin-bottom:1.5rem;
 }
@@ -461,7 +463,7 @@ h2.sec-title em{font-style:italic;color:var(--gold);}
 .cm-card:hover{background:var(--glow);}
 .cm-card:hover::after{transform:scaleX(1);transform-origin:left;}
 .cm-role{font-size:.61rem;color:var(--gold);letter-spacing:.2em;text-transform:uppercase;margin-bottom:.7rem;}
-.cm-name{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--txt);line-height:1.3;margin-bottom:.5rem;}
+.cm-name{font-family:'Playfair Display','Noto Serif Arabic',serif;font-size:1.05rem;color:var(--txt);line-height:1.3;margin-bottom:.5rem;}
 .cm-place{font-size:.68rem;color:var(--muted);}
 
 #interests{background:var(--bg);}
@@ -480,7 +482,7 @@ h2.sec-title em{font-style:italic;color:var(--gold);}
 .int-card:hover{background:var(--glow);transform:translateY(-3px);}
 .int-card:hover::before{opacity:1;}
 .int-num{
-  font-family:'Cormorant Garamond',serif;
+  font-family:'Playfair Display','Noto Serif Arabic',serif;
   font-size:4rem;font-weight:300;
   color:var(--bdr);line-height:1;
   margin-bottom:1.5rem;
@@ -496,7 +498,7 @@ h2.sec-title em{font-style:italic;color:var(--gold);}
 }
 .int-card:hover .int-ico{border-color:var(--bdr2);background:var(--glow);}
 .int-ico svg{width:20px;height:20px;fill:var(--gold);}
-.int-title{font-family:'Cormorant Garamond',serif;font-size:1.42rem;font-weight:400;margin-bottom:.9rem;color:var(--txt);}
+.int-title{font-family:'Playfair Display','Noto Serif Arabic',serif;font-size:1.42rem;font-weight:400;margin-bottom:.9rem;color:var(--txt);}
 .int-desc{font-size:.82rem;color:var(--muted);line-height:2;font-weight:300;}
 
 #photos{background:var(--bg3);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr);transition:background .5s;}
@@ -562,7 +564,7 @@ h2.sec-title em{font-style:italic;color:var(--gold);}
   box-shadow:0 0 10px rgba(201,168,76,.4);
 }
 .tl-year{font-size:.7rem;color:var(--gold);letter-spacing:.18em;margin-bottom:.5rem;}
-.tl-role{font-family:'Cormorant Garamond',serif;font-size:1.26rem;font-weight:400;color:var(--txt);margin-bottom:.3rem;}
+.tl-role{font-family:'Playfair Display','Noto Serif Arabic',serif;font-size:1.26rem;font-weight:400;color:var(--txt);margin-bottom:.3rem;}
 .tl-place{font-size:.72rem;color:var(--gold);opacity:.7;margin-bottom:.65rem;}
 .tl-text{font-size:.82rem;color:var(--muted);line-height:1.9;font-weight:300;}
 
@@ -620,7 +622,7 @@ h2.sec-title em{font-style:italic;color:var(--gold);}
 
 .contact-msg{}
 .contact-msg blockquote{
-  font-family:'Cormorant Garamond',serif;
+  font-family:'Playfair Display','Noto Serif Arabic',serif;
   font-size:1.6rem;font-weight:300;font-style:italic;
   line-height:1.55;color:var(--txt);
   border-right:2px solid var(--gold);
@@ -639,7 +641,7 @@ footer::before{
   background:linear-gradient(90deg,transparent,var(--gold-d),var(--gold),var(--gold-d),transparent);
   opacity:.5;
 }
-.flogo{font-family:'Cormorant Garamond',serif;font-size:1.08rem;color:var(--gold);font-style:italic;letter-spacing:.05em;}
+.flogo{font-family:'Playfair Display','Noto Serif Arabic',serif;font-size:1.08rem;color:var(--gold);font-style:italic;letter-spacing:.05em;}
 .fcopy{font-size:.68rem;color:var(--muted);letter-spacing:.12em;}
 .fsoc{display:flex;gap:.75rem;}
 .sb{
@@ -651,13 +653,19 @@ footer::before{
 .sb:hover{border-color:var(--gold);background:var(--glow);}
 .sb:hover svg{fill:var(--gold-l);}
 
-@keyframes riseIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-@keyframes fadeIn{from{opacity:0}to{opacity:1}}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.6)}}
-@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes riseIn{from{opacity:0;transform:translateY(40px) scale(0.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes fadeIn{from{opacity:0;transform:scale(0.98)}to{opacity:1;transform:scale(1)}}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);box-shadow:0 0 0 0 rgba(201,168,76,.4)}50%{opacity:.5;transform:scale(.65);box-shadow:0 0 0 6px rgba(201,168,76,0)}}
+@keyframes floatY{0%,100%{transform:translateY(0);box-shadow:0 8px 25px rgba(0,0,0,.25)}50%{transform:translateY(-10px);box-shadow:0 20px 40px rgba(0,0,0,.18)}}
+@keyframes shimmer{0%{background-position:200% center}100%{background-position:-200% center}}
+@keyframes borderGlow{0%,100%{border-color:var(--bdr2)}50%{border-color:var(--gold-l);box-shadow:0 0 20px rgba(201,168,76,.2)}}
+@keyframes slideInRight{from{opacity:0;transform:translateX(30px)}to{opacity:1;transform:translateX(0)}}
+@keyframes countUp{from{opacity:0;transform:translateY(20px) scale(0.8)}to{opacity:1;transform:translateY(0) scale(1)}}
 
-.reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease;}
+.reveal{opacity:0;transform:translateY(32px);transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);}
 .reveal.visible{opacity:1;transform:translateY(0);}
+.reveal:nth-child(2){transition-delay:.15s;}
+.reveal:nth-child(3){transition-delay:.3s;}
 
 @media(max-width:1024px){
   .hero{grid-template-columns:1fr;padding-top:7rem;gap:3rem;}
@@ -980,7 +988,7 @@ footer::before{
         </div>
         <div class="citem">
           <div class="cico"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
-          <div><div class="clbl">البريد الإلكتروني</div><div class="cval">email@domain.com</div></div>
+          <div><div class="clbl">البريد الإلكتروني</div><div class="cval"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ee8b838f8782ae8a81838f8780c08d8183">[email&#160;protected]</a></div></div>
         </div>
       </div>
     </div>
@@ -1000,20 +1008,36 @@ footer::before{
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   const root = document.documentElement;
   document.getElementById('themeBtn').addEventListener('click', () => {
     root.setAttribute('data-theme', root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
   });
   const io = new IntersectionObserver((entries) => {
-    entries.forEach((e, i) => {
+    entries.forEach((e, idx) => {
       if (e.isIntersecting) {
-        setTimeout(() => e.target.classList.add('visible'), i * 90);
+        setTimeout(() => {
+          e.target.classList.add('visible');
+        }, idx * 80);
         io.unobserve(e.target);
       }
     });
-  }, {threshold: 0.07});
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Smooth nav highlight on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nlinks a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 200) current = s.id;
+    });
+    navLinks.forEach(a => {
+      a.style.color = a.getAttribute('href') === '#' + current ? 'var(--gold)' : '';
+    });
+  }, { passive: true });
 </script>
 </body>
 </html>
